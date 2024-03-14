@@ -1,0 +1,37 @@
+/* CSS HEX 
+--celtic: #142919;
+--bianca: #fbfbf1;
+--mantle: #9ba59a;
+--avocado: #8f955e;
+--clay-ash: #c9d1c3;
+--pine-glade: #c7cd9d;
+--bandicoot: #7c7c6a;
+--blue-smoke: #748c82;
+--gray-nickel: #bcbcb8;
+*/
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/DALL·E-2024-03-12-22.14.svg');
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, transparent -50%, rgba(255,255,255,0.99) 100%);
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
+}

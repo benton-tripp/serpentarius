@@ -1,3 +1,16 @@
+# Project Specific
+.Renviron
+create-env.bat
+env/
+.vscode/
+serpentarius/__pycache__/
+serpentarius/.env
+serpentarius/app/__pycache__/
+serpentarius/app/models/__pycache__/
+serpentarius/app/routes/__pycache__/
+data/
+!data/conus.shp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

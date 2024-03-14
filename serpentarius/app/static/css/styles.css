@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh; 
 }
-
+/*
 body::before {
     content: "";
     position: absolute;
@@ -35,3 +35,4 @@ body > * {
     position: relative;
     z-index: 1;
 }
+*/

@@ -10,6 +10,7 @@ serpentarius/app/models/__pycache__/
 serpentarius/app/routes/__pycache__/
 data/
 !data/conus.shp
+commands.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

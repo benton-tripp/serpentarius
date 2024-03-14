@@ -143,7 +143,7 @@ User=benton
 Group=www-data
 WorkingDirectory=/home/benton/serpentarius/serpentarius
 Environment="PATH=/home/benton/serpentarius/env/bin"
-ExecStart=/home/benton/serpentarius/env/bin/gunicorn --workers 1 --bind 0.0.0.0:8000 app:create_app
+ExecStart=/home/benton/serpentarius/env/bin/gunicorn --bind 0.0.0.0:8000 app:create_app
 
 [Install]
 WantedBy=multi-user.target

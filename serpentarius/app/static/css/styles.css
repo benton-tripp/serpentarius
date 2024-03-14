@@ -14,9 +14,9 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    background-image: url('../images/DALL·E-2024-03-12-22.14-faded-v3.png');
+    background-image: url('../images/DALL·E-2024-03-12-22-v3.svg');
     background-size: cover;
-    background-position: center 20%;
+    background-position: center center;
     background-repeat: no-repeat;
     min-height: 100vh; 
 }

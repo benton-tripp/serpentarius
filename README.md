@@ -121,5 +121,37 @@ gunicorn --bind 0.0.0.0:8000 "app:create_app()"
 Error logs:
 
 ```
-cat /var/log/nginx/error.log
+sudo tail /var/log/nginx/error.log
+```
+
+
+
+
+Create Gunicorn systemd Service File:
+
+```
+sudo nano /etc/systemd/system/gunicorn.service
+```
+
+```
+[Unit]
+Description=Gunicorn instance to serve my Flask app
+After=network.target
+
+[Service]
+User=benton
+Group=www-data
+WorkingDirectory=/home/benton/serpentarius/serpentarius
+Environment="PATH=/home/benton/serpentarius/env/bin"
+ExecStart=/home/benton/serpentarius/env/bin/gunicorn --workers 1 --bind 0.0.0.0:8000 app:create_app
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable gunicorn
+sudo systemctl start gunicorn
+sudo systemctl status gunicorn
 ```

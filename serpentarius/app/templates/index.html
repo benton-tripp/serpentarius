@@ -3,13 +3,13 @@
 {% block content %}
 <!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+    <div class="nav-container serp-row">
         <a class="navbar-brand" href="#">
             <span>Serpentarius</span>
             <span style="font-size:1.05rem; font-weight: 200;"> [<i>ˌsɛrpɛnˈtɛːriəs</i>]</span>
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Serpentarius (Ophiuchus)" style="height: 40px; width: auto;">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler serp-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
@@ -30,7 +30,7 @@
     </div>
 </nav>
 <!-- Page content-->
-<div class="container">
+<div class="serp-container">
     <div class="serp-row-left top-margin">
         <div class="card custom-box" id="landingCard1">
             <div class="card-body">
